@@ -1,0 +1,124 @@
+.goods {
+    padding: 40px 0;
+    @media (min-width: 1024px) {
+        padding: 60px 0;
+    }
+
+    &__title {
+        font-family: Inter;
+        font-size: 24px;
+        font-weight: 900;
+        margin-bottom: 24px;
+        @media (min-width: 768px) {
+            font-size: 32px;
+            margin-bottom: 32px;
+        }
+        @media (min-width: 1024px) {
+            margin-bottom: 40px;
+        }
+    }
+
+    &__list {
+        display: grid;
+        gap: 32px 8px;
+        grid-template-columns: repeat(2, 50%);
+        @media (min-width: 768px) {
+            gap: 32px 10px;
+            grid-template-columns: repeat(3, 33.3%);
+        }
+        @media (min-width: 1024px) {
+            gap: 40px 16px;
+            grid-template-columns: repeat(3, 33.3%);
+        }
+        @media (min-width: 1440px) {
+            gap: 40px 16px;
+            grid-template-columns: repeat(4, 25%);
+        }
+    }
+
+    &__item {
+    }
+
+    &__card {
+    }
+}
+.container {
+}
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    &__link {
+        margin-bottom: 12px;
+
+        @media (min-width: 768px) {
+            margin-bottom: 16px;
+        }
+        @media (min-width: 1024px) {
+            margin-bottom: 16px;
+        }
+    }
+
+    &__image {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 16px;
+    }
+
+    &__like-button {
+        position: absolute;
+        content: '';
+
+        top: 12px;
+        right: 12px;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 12px;
+        gap: 18px;
+
+        color: #1c1c1c;
+
+        @media (min-width: 768px) {
+            flex-direction: row;
+            justify-content: space-between;
+            margin-bottom: 37px;
+        }
+        @media (min-width: 1024px) {
+            margin-bottom: 18px;
+        }
+    }
+
+    &__info-title {
+        font-size: 12px;
+        font-weight: 400;
+
+        @media (min-width: 768px) {
+            font-size: 16px;
+        }
+    }
+
+    &__info-price {
+        font-size: 16px;
+
+        @media (min-width: 768px) {
+            font-size: 20px;
+        }
+    }
+
+    &__button {
+        border: 1px solid #0044f0;
+        border-radius: 32px;
+        padding: 12px 24px;
+        color: #0044f0;
+        transition: all .2s ease-in;
+
+        &:hover {
+            color: #fff;
+            background-color: #0044f0;
+        }
+    }
+}
