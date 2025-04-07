@@ -150,6 +150,16 @@ display: none;
     }
 }
 
+.product__slider-arrow-next,
+.product__slider-arrow-prev {
+    position: absolute;
+    z-index: 1;
+    top: calc(50% - 16px);
+}
+.product__slider-arrow-next {
+    right: 0;
+}
+
 .container {
 }
 .table {
@@ -173,5 +183,20 @@ display: none;
             color: #1c1c1c;
             text-align: end;
         }
+    }
+}
+
+.slider-thumbnails {
+    max-width: 100%;
+}
+
+.product__slider-swap {
+    max-width: 100%;
+    @media (min-width: 768px) {
+        max-width: 60%;
+        width: 60%;
+    }
+    @media (min-width: 1024px) {
+        max-width: 832px;
     }
 }
