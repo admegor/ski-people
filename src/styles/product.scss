@@ -58,6 +58,9 @@
 
     &__info {
         color: #1c1c1c;
+        @media (min-width: 1024px) {
+            min-width: 40%;
+        }
     }
 
     &__info-price {
@@ -100,9 +103,18 @@
     .info-button__to-cart {
         color: #fff;
         background-color: #0044F0;
+        border: 1px solid #0044F0;
         border-radius: 32px;
         padding: 12px 24px;
         width: 100%;
+        &:hover {
+            background-color: #0945DE;
+            border-color: #0945DE;
+        }
+        &:active {
+            background-color: #0044F0;
+            border-color: #0044F0;
+        }
     }
     
     .info-button__like {
